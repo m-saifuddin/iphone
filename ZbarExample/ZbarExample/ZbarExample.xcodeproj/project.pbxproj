@@ -40,7 +40,6 @@
 		54AD59C416848EDC0036C149 /* ZbarExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZbarExample-Info.plist"; sourceTree = "<group>"; };
 		54AD59C616848EDC0036C149 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		54AD59C816848EDC0036C149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		54AD59CA16848EDC0036C149 /* ZbarExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZbarExample-Prefix.pch"; sourceTree = "<group>"; };
 		54AD59CB16848EDC0036C149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54AD59CC16848EDC0036C149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		54AD59CF16848EDC0036C149 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		54AD59F416848F640036C149 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		54AD59F516848F640036C149 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		54AD59F616848F640036C149 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		C3C5BFD2194ACD700041DA8E /* ZbarExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZbarExample-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +142,10 @@
 		54AD59C316848EDC0036C149 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3C5BFD2194ACD700041DA8E /* ZbarExample-Prefix.pch */,
 				54AD59C416848EDC0036C149 /* ZbarExample-Info.plist */,
 				54AD59C516848EDC0036C149 /* InfoPlist.strings */,
 				54AD59C816848EDC0036C149 /* main.m */,
-				54AD59CA16848EDC0036C149 /* ZbarExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -367,6 +367,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -384,6 +385,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
